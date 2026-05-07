@@ -284,3 +284,10 @@ html, body {
   color: var(--warning);
 }
 
+
+/* PWA standalone: compensate for notch on mobile */
+@media (max-width: 768px) {
+  .pwa-standalone #layout {
+    padding-top: var(--safe-top);
+  }
+}
